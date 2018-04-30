@@ -1,0 +1,37 @@
+body {
+  font-family: 'Proxima Nova Rg', Arial, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  min-width: 320px;
+  overflow-x: hidden;
+  color: $darkGray;
+  background-color: $gray;
+  position: relative;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1300px;
+}
+.title {
+  font-family: 'Alegreya', Times New Roman, Times, Georgia, serif;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  line-height: 1em;
+}
+.subtitle {
+  font-family: 'Alegreya', Times New Roman, Times, Georgia, serif;
+  color: $brown;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.description {
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}

@@ -1,0 +1,132 @@
+.best-snack {
+  background-color: $bg-gray;
+  background-image: url(./../img/icon-for-bg-sect-5.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  &__wrapper {
+    padding: 90px 15px 150px;
+  }
+  &__name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__name-title {
+    margin-bottom: 15px;
+  }
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__ingredients {
+    max-width: 320px;
+    padding: 0 10px;
+  }
+  &__ingredients-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &__ingredients-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__ingredients-title {
+    margin-bottom: 15px;
+    font-family: 'Alegreya', Times New Roman, Times, Georgia, serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: $brown;
+  }
+  &__item {
+    position: relative;
+  }
+  &__photo {
+    max-width: 807px;
+    border: 5px solid $white;
+    overflow: hidden;
+    line-height: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__modal-recipe {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 170px;
+    height: 60px;
+    border: 1px dashed $extraLightBrown;
+    background-color: $white;
+    button {
+      width: 100%;
+      height: 100%;
+      color: $extraLightBrown;
+      text-transform: uppercase;
+      background-color: transparent;
+      font-family: 'Alegreya', Times New Roman, Times, Georgia, serif;
+      font-weight: 700;
+      font-size: 18px;
+      &:hover {
+        background-color: $extraLightBrown;
+        color: $white;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  &__cook-time {
+    position: absolute;
+    top: -10%;
+    right: 8px;
+  }
+  &__time-box {
+    width: 200px;
+    height: 200px;
+    background-color: $white3;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Alegreya', Times New Roman, Times, Georgia, serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 30px;
+    border-bottom: 1px solid $extraLightBrown;
+    &--bg {
+      background: url("./../img/box-bg.svg") no-repeat center;
+      background-size: cover;
+      border-bottom: none;
+    }
+  }
+  &__time-text {
+    color: $brown;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  &__time-num {
+    color: $darkGray;
+    font-size: 60px;
+    &--big{
+    color: $extraLightBrown;
+    font-size: 92px;
+    }
+  }
+  &__time-min {
+    color: $brown;
+    font-size: 18px;
+  }
+}

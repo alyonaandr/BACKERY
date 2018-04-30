@@ -1,0 +1,48 @@
+// RESET
+@import "./base/_reset.scss";
+
+//PLUGINS-STYLE
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+// @import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+// FONTS
+@import "./fontawesome-all.css";
+@import "https://fonts.googleapis.com/css?family=Alegreya:400,700|Playfair+Display:700";
+@font-face {
+  font-family: 'SCRIPTIN';
+  src: url('../webfonts/SCRIPTIN.eot');
+  src: local('SCRIPTIN'), url('../webfonts/SCRIPTIN.woff') format('woff'), url('../webfonts/SCRIPTIN.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url('../webfonts/ProximaNova-Regular.eot');
+  src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+    url('../webfonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/ProximaNova-Regular.woff') format('woff'),
+    url('../webfonts/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// BASE
+@import "./base/_colors.scss";
+@import "./base/_helpers.scss";
+@import "./base/_variables.scss";
+@import "./base/_mixins.scss";
+@import "./base/_base.scss";
+
+// SECTIONS
+@import "./sections/_header.scss";
+@import "./sections/_mainscreen.scss";
+@import "./sections/_art-of-chef.scss";
+@import "./sections/_dishes.scss";
+@import "./sections/_breakfast.scss";
+@import "./sections/_best-snack.scss";
+@import "./sections/_footer-menu.scss";
+@import "./sections/_mainscreen-contact.scss";
+
+//MEDIA
+@import "./base/_madia.scss";
+
+//Else
+@import "./sections/_modal-full-recipe.scss";

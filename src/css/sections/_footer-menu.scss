@@ -1,0 +1,97 @@
+.footer-menu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+  &__wrapper {
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    width: 40%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    a {
+      color: $darkGray;
+      font-family: 'Alegreya', Times New Roman, Times, Georgia, serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      position: relative;
+      text-transform: uppercase;
+      &.active {
+        color: $darkBrown;
+      }
+      &:hover {
+        color: $darkBrown;
+      }
+    }
+    span {
+      color: $darkGray;
+      font-family: 'Alegreya', Times New Roman, Times, Georgia, serif;
+      font-size: 20px;
+    }
+    &--left {
+      &:before {
+        position: absolute;
+        content: '';
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        min-width: 110px;
+        height: 1px;
+        background-color: $gray;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        top: -20px;
+        left: 0;
+        width: 100%;
+        min-width: 110px;
+        height: 1px;
+        background-color: $gray;
+      }
+    }
+    &--right {
+      &:before {
+        position: absolute;
+        content: '';
+        bottom: -20px;
+        right: 0;
+        width: 100%;
+        min-width: 110px;
+        height: 1px;
+        background-color: $gray;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        top: -20px;
+        right: 0;
+        width: 100%;
+        min-width: 110px;
+        height: 1px;
+        background-color: $gray;
+      }
+    }
+  }
+  &__logo {
+    max-width: 140px;
+    height: auto;
+    font-family: 'SCRIPTIN';
+    font-size: 30px;
+    letter-spacing: 0.3em;
+    padding-bottom: 15px;
+    a {
+      color: $darkGray;
+    }
+  }
+}

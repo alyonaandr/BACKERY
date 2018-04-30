@@ -1,0 +1,296 @@
+@media (max-width: 1100px) {
+  .art-of-chef {
+    &__gallery-row {
+      display: block;
+    }
+    &__gallery-item {
+      height: 150px;
+      width: 100%;
+    }
+  }
+  .dishes {
+    &__slide-time-box {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateX(0);
+    }
+  }
+  .footer-menu {
+    &__logo {
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(50%);
+      text-align: center;
+      max-width: 100%;
+      a {
+        border: 1px solid $gray;
+        border-radius: 50%;
+        padding: 0 20px;
+      }
+    }
+    &__nav {
+      width: 50%;
+    }
+  }
+  .best-snack {
+    &__wrapper {
+      padding-bottom: 200px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    position: absolute;
+    height: auto;
+    padding: 20px 15px;
+    &__wrapper {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &__nav-main {
+      display: none;
+      width: 100%;
+      padding-top: 30px;
+    }
+    &__nav-btn {
+      display: flex;
+    }
+    &__logo {
+      padding: 0;
+      line-height: 1em;
+    }
+    &__social {
+      display: none;
+    }
+  }
+  .best-snack {
+    &__cook-time {
+      position: absolute;
+      top: -20%;
+      left: 2%;
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 923px) {
+  .art-of-chef {
+    &__wrapper {
+      display: block;
+    }
+    &__info-block {
+      width: 100%;
+    }
+    &__gallery-block {
+      width: 100%;
+    }
+    &__gallery-row {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__gallery-item {
+      height: 250px;
+      width: 100%;
+    }
+  }
+  .footer-menu {
+    &__logo {
+      display: none;
+    }
+    &__nav {
+      width: 100%;
+      span {
+        display: none;
+      }
+    }
+    &__wrapper {
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+  }
+  .best-snack {
+    &__body {
+      display: block;
+    }
+    &__ingredients {
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 50px;
+    }
+    &__name {
+      margin-bottom: 50px;
+    }
+    &__cook-time {
+      position: absolute;
+      top: -20%;
+      left: 2%;
+      display: flex;
+    }
+    &__item {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 50px;
+    }
+  }
+  .breakfast {
+    &__wrapper {
+      display: block;
+    }
+    &__price {
+      width: 100%;
+    }
+    &__slider-wrapper {
+      width: 50%;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    &__slider-decor {
+      z-index: 10;
+      display: none;
+    }
+  }
+  .body-hidden {
+    overflow: hidden;
+  }
+  .dishes {
+    &__slide-info {
+      width: 100%;
+      height: inherit;
+    }
+    &__small-slider {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .art-of-chef {
+    &__gallery-row {
+      display: block;
+    }
+    &__gallery-item {
+      height: 150px;
+      width: 100%;
+    }
+  }
+  .best-snack {
+    &__ingredients {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+    &__cook-time {
+      display: none;
+    }
+  }
+  .dishes {
+    &__slide-time-box {
+      display: none;
+    }
+    &__slide-info {
+      width: 100%;
+      height: auto;
+    }
+    &__slide-item {
+      margin-bottom: 50px;
+    }
+  }
+  .breakfast {
+    &__slider {
+      max-width: 320px;
+      padding: 50px 25px;
+    }
+  }
+  .mainscreen-contact {
+    &__info-title {
+      font-size: 43px;
+    }
+  }
+}
+
+@media (max-width: 512px) {
+  &__slide-item {
+    height: 1840px;
+  }
+  &__slide-custom {
+    height: 1815px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-menu {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      &:before {
+        position: absolute;
+        content: '';
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        min-width: 110px;
+        height: 1px;
+        background-color: $gray;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        top: -20px;
+        left: 0;
+        width: 100%;
+        min-width: 110px;
+        height: 1px;
+        background-color: $gray;
+      }
+    }
+    &__nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      &--left {
+        &:before {
+          display: none;
+        }
+        &:after {
+          display: none;
+        }
+      }
+      &--right {
+        &:before {
+          display: none;
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .art-of-chef {
+    &__chef-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    &__chef-photo {
+      margin: 30px 0;
+    }
+  }
+}

@@ -1,0 +1,214 @@
+.breakfast {
+  background: url("./../img/4th-bg.png") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    padding: 70px 15px;
+  }
+  &__price {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Alegreya', Times New Roman, Times, Georgia, serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  &__price-title {
+    color: $white;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.06em;
+  }
+  &__price-subtitle {
+    color: $lightPlum2;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1em;
+    margin-bottom: 50px;
+  }
+  &__price-item {
+    max-width: 320px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+  &__item-name {
+    font-family: 'Alegreya', Times New Roman, Times, Georgia, serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: $white;
+  }
+  &__item-description {
+    color: $lightGray;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &__item-price {
+    font-family: 'Alegreya', Times New Roman, Times, Georgia, serif;
+    font-size: 36px;
+    color: $extraLightBrown;
+    font-weight: 400;
+  }
+  &__slider-wrapper {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  &__slide-wrapper {
+    box-shadow: 15px 20px 15px 40px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+  }
+  &__slider-decor img {
+    position: absolute;
+    bottom: 0;
+    right: -30px;
+    transform: translateX(50%) translateY(25%);
+    z-index: 30;
+  }
+  &__slide-decortext {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-weight: 700;
+  }
+  &__slide-decor-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    position: relative;
+    &:after {
+      position: absolute;
+      left: 50%;
+      top: -45%;
+      content: '';
+      width: 60px;
+      height: 60px;
+      background-color: $bg-gray;
+      border: 1px solid $lightGray;
+      border-radius: 50%;
+      transform: translateX(-50%);
+    }
+    &:before {
+      position: absolute;
+      left: 50%;
+      top: 15px;
+      content: '';
+      width: 90%;
+      height: 1px;
+      background-color: $lightGray;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+    img {
+      z-index: 15;
+    }
+  }
+  &__slider {
+    background-color: $bg-gray;
+    max-width: 440px;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    position: relative;
+    z-index: 10;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 95%;
+      border: 1px dashed $gray;
+      background: transparent;
+      height: 95%;
+    }
+    &--2 {
+      position: absolute;
+      top: 3%;
+      right: -4%;
+      height: 95%;
+      background-color: $bg-slide-1;
+      max-width: 440px;
+      width: 100%;
+      z-index: 3;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 95%;
+        border: 1px dashed $gray;
+        background: transparent;
+        height: 95%;
+      }
+    }
+    &--3 {
+      position: absolute;
+      top: 5%;
+      right: -8%;
+      background-color: $bg-slide-2;
+      max-width: 440px;
+      width: 100%;
+      height: 90%;
+      z-index: 2;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 95%;
+        border: 1px dashed $gray;
+        background: transparent;
+        height: 95%;
+      }
+    }
+  }
+  &__slide-block {
+    max-width: 360px;
+    width: 100%;
+    min-height: 360px;
+    height: 100%;
+    text-align: center;
+  }
+  &__slide-name {
+    font-family: 'Alegreya', Times New Roman, Times, Georgia, serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+
+  &__slide-description {
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+  }
+
+  &__slide-btn {
+    border: 1px solid $lightGray;
+    padding: 15px 50px;
+    background: transparent;
+    color: $brown;
+    text-transform: uppercase;
+    font-family: 'Alegreya', Times New Roman, Times, Georgia, serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    z-index: 40;
+    &:hover {
+      background-color: $white2;
+    }
+  }
+}
